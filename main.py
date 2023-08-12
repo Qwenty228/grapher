@@ -29,24 +29,8 @@ class Window:
                         pg.quit()
                         exit()
 
-                    if event.key == pg.K_a:
-                        self.grapher.movement[0] = True
-                    if event.key == pg.K_d:
-                        self.grapher.movement[1] = True
-                    if event.key == pg.K_w:
-                        self.grapher.movement[2] = True
-                    if event.key == pg.K_s:
-                        self.grapher.movement[3] = True
+                self.grapher.event(event)
                 
-                if event.type == pg.KEYUP:
-                    if event.key == pg.K_a:
-                        self.grapher.movement[0] = False
-                    if event.key == pg.K_d:
-                        self.grapher.movement[1] = False
-                    if event.key == pg.K_w:
-                        self.grapher.movement[2] = False
-                    if event.key == pg.K_s:
-                        self.grapher.movement[3] = False
                 
 
             self.grapher.render(self.screen)

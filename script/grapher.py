@@ -31,6 +31,27 @@ class Grapher:
         # self.function = lambda x: - math.sin(x)
         
 
+    def event(self, event):
+        if event.type == pg.KEYDOWN:
+            if event.key == pg.K_a:
+                self.movement[0] = True
+            if event.key == pg.K_d:
+                self.movement[1] = True
+            if event.key == pg.K_w:
+                self.movement[2] = True
+            if event.key == pg.K_s:
+                self.movement[3] = True
+        
+        if event.type == pg.KEYUP:
+            if event.key == pg.K_a:
+                self.movement[0] = False
+            if event.key == pg.K_d:
+                self.movement[1] = False
+            if event.key == pg.K_w:
+                self.movement[2] = False
+            if event.key == pg.K_s:
+                self.movement[3] = False
+
     def function_plot(self, function):
         points = []
         for x in range(-10, 10+1):

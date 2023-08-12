@@ -1,2 +1,2 @@
 # grapher
-henlo
+graph plotter made with pygame
