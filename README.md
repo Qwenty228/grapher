@@ -1,6 +1,6 @@
 # My Grapher
 Revised version of my very first github repository
-A graph plotter made by pygame.
+A graph plotter made with pygame.
 
 
 new functionalites:
